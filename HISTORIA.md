@@ -1,5 +1,3 @@
-# centroregionaldeadiestramientocanino
-Unidad Nacional Canina
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,9 +6,667 @@ Unidad Nacional Canina
   <title>Unidad Nacional Canina - Policía Nacional del Ecuador</title>
   <link rel="stylesheet" href="css/historia.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }9
+  :root {
+  --police-blue: #154986; /* COLOR AZUL POLICÍA */
+  --police-gray: #a7a9ab; /* COLOR GRIS POLICÍA */
+  --canine-yellow: #ff9e15; /* COLOR AMARILLO CANINO */
+  --canine-black: #1f2937; /* color negro del CANINO */
+  --white: #ffffff;
+  --light-gray: #f9fafb;
+  --azul: #140338;
+  --black: #000000;
+  }
+  body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--canine-black);
+  scroll-behavior: smooth;
+  }
+  /* ENCABEZADO DE LA HISTORIA */
+  .header {
+  background: linear-gradient(
+      135deg,
+      var(--police-blue) 0%,
+      var(--canine-black) 100%
+  );
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .header-content {
+  max-width: 1200auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  }
+  .logo-left, .logo-right {
+  display: flex; /* Utiliza flexbox para alinear el logo y el texto */
+  align-items: center;
+  }
+  .logo-img {
+  width: 60px; /* Ajusta el tamaño de la imagen del logo */
+  height: auto;
+  margin-right: 15px; /* Espacio entre el logo y el texto a la izquierda */
+  }
+  /* Estilo para el logo de la derecha si lo necesitas, puedes ajustar el margen */
+  .logo-right .logo-img {
+  width: 80px; /* Ajusta el tamaño de la imagen del logo */
+  height: auto;
+  margin-right: 0;
+  margin-left: 15px; /* Espacio entre el logo y otros elementos */
+  }
+  .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  }
+  .logo {
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--police-blue);
+  font-weight: bold;
+  }
+  .header-text {
+  color: var(--white);
+  }
+  .header-text h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
+  .header-text p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  }
+  .nav {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  }
+  .nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  }
+  .nav a:hover,
+  .nav a.active {
+  background: var(--canine-yellow);
+  color: var(--canine-black);
+  }
+  .mobile-menu {
+  display: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  }
+  /* SECCIÓN CONTENIDO */
+  .main-content {
+  /* tamaño del contenido */
+  margin-top: 0%;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+      /* seccion del carusel */
+  .section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  .section-title {
+  text-align: center;
+  color: var(--police-blue);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  }
+  .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--canine-yellow);
+  }
+  #inicio {
+  position: relative;
+  /* Elimina el background del section, ya que lo tendrá el slideshow */
+  color: var(--white);
+  text-align: center;
+  overflow: hidden; /* Importante para que las imágenes no se desborden */
+  height: 65vh; /* Ajusta la altura de la sección según tus necesidades, por ejemplo, 100vh para que ocupe toda la ventana */
+  }
+  .background-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  .background-slideshow .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; /* Las imágenes estarán ocultas por defecto */
+  transition: opacity 1.5s ease-in-out; /* Transición para un efecto de fundido suave */
+  }
+  .background-slideshow .slide.active {
+  opacity: 1; /* La imagen activa es visible */
+  }
+  .content-overlay {
+  position: relative; /* Lo posiciona sobre el carrusel de fondo */
+  z-index: 2; /* Lo mantiene por encima de las imágenes */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(
+      63,
+      91,
+      122,
+      0.39
+  ); /* Superposición de color para mejorar la legibilidad del texto */
+  }
+  /* secciòn linea de tiempo */
+  /*<!--Linea de tiempo con CSS y JavaScript-->*/
+  @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+  .timeline {
+  display: FLEX;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 1000px;
+  position: relative;
+  }
+  .timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(255, 255, 255, 0.07); /* Color de la línea de tiempo */
+  }
+  @media only screen and (max-width: 767px) {
+  .timeline:before {
+  left: 40px;
+  }
+  }
+  .timeline__content-title {
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: 0.4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #fff; /* Color del título del contenido de la línea de tiempo */
+  }
+  .timeline__content-desc {
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.863); /* color del texto del contenido de la línea de tiempo */
+  font-family: Cardo;
+  font-weight: normal;
+  line-height: 25px;
+  }
+  .timeline-item {
+  padding: 40px 0;
+  opacity: 0.3;
+  filter: blur(2px);
+  transition: 0.5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+  }
+  .timeline-item:before {
+  white-space: pre-line; /* respeta saltos de línea */
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-family: "Pathway Gothic One", sans-serif;
+  border-left: 2px solid rgba(255, 255, 255, 0.5); /* Color de la línea antes del texto */
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+  }
+  .timeline-item:nth-child(even) {
+  align-self: flex-end;
+  }
+  .timeline-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, 0.5); /* Color de la línea antes del texto */
+  padding-right: 15px;
+  }
+  .timeline-item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+  }
+  .timeline-item--active:before {
+  top: 50%;
+  transition: 0.3s all 0.2s;
+  opacity: 1;
+  }
+  .timeline-item--active .timeline__content-title {
+  margin: -50px 0 20px 0;
+  }
+  @media only screen and (max-width: 767px) {
+  .timeline-item {
+  align-self: baseline !important;
+  width: 100%;
+  padding: 0 30px 150px 80px;
+  }
+  .timeline-item:before {
+  left: 10px !important;
+  padding: 0 !important;
+  top: 50px;
+  text-align: center !important;
+  width: 60px;
+  border: none !important;
+  }
+  .timeline-item:last-child {
+  padding-bottom: 40px;
+  }
+  }
+  .timeline__img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4); /* Sombra de la imagen */
+  }
+  .timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  transition: 0.3s ease 0s;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+  .timeline-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(144, 124, 124, 0.799); /* Fondo del contenedor de la línea de tiempo */
+  content: "";
+  }
+  .timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  }
+  .timeline-header__title {
+  color: #fff; /* Color del título del encabezado de la línea de tiempo */
+  font-size: 46px;
+  font-family: Cardo;
+  font-weight: normal;
+  margin: 0;
+  }
+  .timeline-header__subtitle {
+  color: rgba(255, 255, 255, 0.5); /* Color del subtítulo del encabezado de la línea de tiempo */
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+  }
+  /* finalización de la línea de tiempo */  
+  /* SECCION DE RECONOCIMIENTOS */
+  .reconocimientos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  }
+  .reconocimiento-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  .reconocimiento-card:hover {
+  transform: translateY(-5px);
+  }
+  .reconocimiento-icon {
+  font-size: 3rem;
+  color: var(--canine-yellow);
+  margin-bottom: 1rem;
+  }
+  /* Revistas Section */
+  .revistas-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  }
+  .revista-card {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  .revista-card:hover {
+  transform: scale(1.05);
+  }
+  .revista-cover {
+  height: 250px;
+  background: linear-gradient(
+      135deg,
+      var(--white),
+      var(--white)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 2rem;
+  }
+  
+  .revista-info {
+  padding: 1rem;
+  } 
+  .revista-btn {
+  background: var(--police-blue);
+  color: var(--white); /* color de letras del boton */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 0.25rem;
+  transition: background 0.3s ease;
+  }
+  .revista-btn:hover {
+  background: var(--canine-yellow);
+  color: var(--canine-black);
+  }
+  /* Estadísticas Section */
+  .estadisticas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  }
+  
+  .stat-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--canine-yellow);
+  }
+  
+  .stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--police-blue);
+  }
+  
+  .stat-label {
+  color: var(--police-gray);
+  margin-top: 0.5rem;
+  }
+  
+  .chart-container {
+  height: 200px;
+  background: var(--light-gray);
+  border-radius: 10px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--police-gray);
+  }
+  
+  /* Footer */
+  .footer {
+  background: var(--canine-black);
+  color: var(--white);
+  padding: 3rem 2rem 1rem;
+  }
+  
+  .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  }
+  
+  .footer-section h3 {
+  color: var(--canine-yellow);
+  margin-bottom: 1rem;
+  }
+  
+  .social-links {
+  display: flex;
+  gap: 1rem;
+  }
+  
+  .social-links a {
+  color: var(--white);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+  color: var(--canine-yellow);
+  }
+  
+  .map-container {
+  height: 200px;
+  background: var(--police-gray);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  }
+  
+  /* WhatsApp Float */
+  .whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+  z-index: 1000;
+  }
+  
+  @keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+  }
+  
+  .whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  background: var(--canine-black);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  }
+  
+  .whatsapp-float:hover .whatsapp-tooltip {
+  opacity: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+  .nav {
+      display: none;
+  }
+  
+  .mobile-menu {
+      display: block;
+  }
+  
+  .jefe-section {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+  
+  .historia-content {
+      grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+      font-size: 2rem;
+  }
+  
+  .header-text h1 {
+      font-size: 1rem;
+  }
+  
+  .header-text p {
+      font-size: 0.8rem;
+  }
+  }
+  
+  @media (max-width: 480px) {
+  .section {
+      padding: 2rem 1rem;
+  }
+  
+  .jefe-photo {
+      width: 200px;
+      height: 250px; 
+  .whatsapp-float {
+      bottom: 1rem;
+      right: 1rem;
+      width: 50px;
+      height: 50px;
+  }
+  }
+  
+  .fade-in {
+  animation: fadeInUp 1s ease;
+  }
+  
+  @keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  }
+  /* ESTILOS DEL BOTÓN SCROLL TO TOP */
+  .scroll-to-top {
+  position: fixed;
+  left: 30px; /* Ubicado en el lado izquierdo */
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  z-index: 1000;
+  }
+  .scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  }
+  .scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  }
+  .scroll-to-top:active {
+  transform: translateY(-2px);
+  }
+  /* Flecha hacia arriba */
+  .scroll-to-top::before {
+  content: '↑';
+  font-weight: bold;
+  font-size: 24px;
+  }
+  /* Alternativa con símbolo diferente */
+  .scroll-to-top.arrow-style::before {
+  content: '⬆';
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+  .scroll-to-top {
+  left: 20px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  }
+  }
+  /* CIERRE DEL BOTÓN SCROLL TO TOP */
+</style>
 </head>
 <body>
-    <!-- ENCABEZADO-->
+  
+<!-- ENCABEZADO-->
 
 <header class="header">
 <div class="header-content">
