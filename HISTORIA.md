@@ -6,9 +6,7 @@ Unidad Nacional Canina
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Unidad Nacional Canina - Policía Nacional del Ecuador</title>
-  <link
-    rel="stylesheet" href="css/historia.css"
-  />
+  <link rel="stylesheet" href="css/historia.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
@@ -143,7 +141,6 @@ Unidad Nacional Canina
             <h2 class="timeline-header__title">CENTRO REGIONAL DE ADIESTRAMIENTO CANINO</h2>
             <h3 class="timeline-header__subtitle">“La historia nunca antes contada”</h3>
         </div>
-
         <div class="timeline">
             <div class="timeline-item" data-text="EL INICIO DE LA POLICÍA NACIONAL DEL ECUADOR">
                 <div class="timeline__content">
@@ -157,7 +154,6 @@ Unidad Nacional Canina
                   </p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="PRIMERA ESCUADRA CANINA">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/19601.gif" alt="HISTORIA">
@@ -168,7 +164,6 @@ Unidad Nacional Canina
                     </p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="PRIMER CURSO DE ENTRENAMIENTO DE PERROS POLICÍAS">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1969.png" alt="Servidores Policiales">
@@ -181,7 +176,6 @@ Unidad Nacional Canina
                   </p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="DESFILE CÍVICO MILITAR">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1969dc.gif" alt="Desfile Cívico Militar">
@@ -192,7 +186,6 @@ Unidad Nacional Canina
                     </p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="PRIMERA ESCUELA DE ADIESTRAMIENTO DE CANES EN GUAYAQUIL">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1970.png" alt="Primera Escuela">
@@ -208,7 +201,6 @@ Unidad Nacional Canina
                     </p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="PRIMERA UNIDAD CANINA">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1970PU.png" alt="Primera Unidad">
@@ -219,7 +211,6 @@ Unidad Nacional Canina
                         bajo la dirección del Subteniente Luis Cárdenas E."</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="CAPACITACIONES INTERNACIONALES">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1974.png" alt="Primera Unidad">
@@ -230,7 +221,6 @@ Unidad Nacional Canina
                         con un salario equivalente al de un caballo de la institución, destinado a su alimentación y mantenimiento."</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="PRIMER CURSO DE PERROS ANTIDROGAS REALIZADO EN ESTADOS UNIDOS">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1960.png" alt="Primera Curso Antidrogas">
@@ -242,15 +232,11 @@ Unidad Nacional Canina
                         contando con la asesoría de instructores estadounidenses."</p>
                 </div>
             </div>
-            
-
             <div class="timeline-header">
                 <h2 class="timeline-header__title">ANTECEDENTES HISTORICOS DEL ACTUAL CENTRO REGIONAL DE ADIESTRAMIENTO CANINO</h2>
                 <h3 class="timeline-header__subtitle">“Los inicios de lo que actualmente se consolida como el 
                     Centro Regional de Adiestramiento Canino de la Policía Nacional, se remonta al mes de septiembre de 1988”</h3>
             </div>
-
-
             <div class="timeline-item" data-text="EL SUEÑO SE RENUEVA">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/pastor.jpg" alt="Coronel Pastor">
@@ -266,7 +252,6 @@ Unidad Nacional Canina
                     los nombres de: "AIRIN", "ASKAN", "AKO", "CLIFF", "AIKA" todos ellos de raza Pastor Alemán."</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="CURSO ANTIDROGAS CON CANES BAJO LA DIRECCIÓN DE LA POLICÍA BRITÁNICA">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1987.jpg" alt="Curso Cayambe">
@@ -279,7 +264,6 @@ Unidad Nacional Canina
                         Springel Spaniel, fueron donados por el Gobierno Británico a la Policía Nacional.</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="PRIMER PARTE INFORMATIVO SOLICITANDO LA INTEGRACIÓN DE CANES A LA INTERPOL">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1990..png" alt="Guías caninos">
@@ -290,8 +274,6 @@ Unidad Nacional Canina
                         de servidores Policiales y canes que se integran al servicio de Estupefacientes e INTERPOL.</p>
                 </div>
             </div>
-
-
             <div class="timeline-item" data-text="AUTORIZACIÓN DE INTEGRACIÓN DE CANES AL SERVICIO ANTIDROGAS">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1990.png" alt="Servicio Antidrogas en el Aeropuerto Mariscal Sucre">
@@ -304,7 +286,6 @@ Unidad Nacional Canina
                         del Programa de Canes Detectores de Drogas.</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="EXPANSIÓN OPERATIVA EN AEROPUERTOS INTERNACIONALES (1992)">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/1991.jpeg" alt="Servicio Antidrogas en el Aeropuerto Mariscal Sucre">
@@ -316,7 +297,6 @@ Unidad Nacional Canina
                       en los aeropuertos internacionales de Quito y Guayaquil, constituyéndose en un hito trascendental.</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="PERSONAL POLICIAL Y CANES EN OPERACIONES DE CONTROL ANTIDROGAS – AEROPUERTO INTERNACIONAL DE QUITO, 1992">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/crlpstr.jpeg" alt="Servicio Antidrogas en el Aeropuerto Mariscal Sucre">
@@ -327,14 +307,11 @@ Unidad Nacional Canina
                       Tnte. Jorge Pástor, Poli. Eduardo Cisneros, Poli. Ernesto Anrango, Poli. Segundo Trujllo, Sbte. Pedro Gallegos.</p>
                 </div>
             </div>
-
             <div class="timeline-header">
                 <h2 class="timeline-header__title">EDIFICACIÓN DEL CENTRO REGIONAL DE ADIESTRAMIENTO CANINO 1993-1994</h2>
                 <h3 class="timeline-header__subtitle">“Los inicios de lo que actualmente se consolida como el 
                     Centro Regional de Adiestramiento Canino de la Policía Nacional, se remonta al mes de septiembre de 1988”</h3>
             </div>
-
-
             <div class="timeline-item" data-text="“UN SUEÑO QUE COMIENZA”">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/terreno.png" alt="Adquisición del terreno">
@@ -345,7 +322,6 @@ Unidad Nacional Canina
                       construcción de un centro propio para el adiestramiento canino.</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="DEL SUEÑO A LOS PLANOS”">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/maqueta.png" alt="Maqueta del Centro de Adiestramiento Canino">
@@ -355,7 +331,6 @@ Unidad Nacional Canina
                       implantación de la obra, sentando las bases del futuro Centro de Adiestramiento Canino.</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="“LA PRIMERA PIEDRA”">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/PRIMERA_PIEDRA/11.gif" alt="Colocación de la Primera Piedra">
@@ -365,7 +340,6 @@ Unidad Nacional Canina
                       proyecto que transformará la historia del adiestramiento canino en Ecuador.</p>
                 </div>
             </div>
-
             <div class="timeline-item" data-text="“CONSTRUYENDO EL FUTURO”">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/PRIMERA_PIEDRA/11.gif" alt="Colocación de la Primera Piedra">
@@ -375,7 +349,6 @@ Unidad Nacional Canina
                       el personal de guías de canes de CAC.</p>
                 </div>
             </div>
-            
             <div class="timeline-item" data-text="“CONSTRUYENDO EL FUTURO”">
                 <div class="timeline__content">
                     <img class="timeline__img" src="img/historia/PRIMERA_PIEDRA/11.gif" alt="Colocación de la Primera Piedra">
@@ -385,36 +358,25 @@ Unidad Nacional Canina
                       el personal de guías de canes de CAC.</p>
                 </div>
             </div>
-
-         
-
             <!-- SEGUIR EDITANDO -->
-
-
         </div>
-
         <div class="demo-footer">
             <a href="http://www.turkishnews.com/Ataturk/life.htm" target="_blank">Source/Kaynak</a>
         </div>
     </div>
 </section>
-
   <!-- Enlace al archivo timeline.js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/timeline.js"></script>
-
   <!-- FINAL DE LA LINEA DE TIEMPO -->
-
 <!-- Reconocimientos -->
-
 <section
   id="reconocimientos"
   class="section fade-in"
   style="background: var(--light-gray)"
 >
   <h2 class="section-title">Reconocimientos Nacionales e Internacionales</h2>
-  <div class="reconocimientos-grid">
-    
+  <div class="reconocimientos-grid"> 
     <div class="reconocimiento-card">
       <div class="reconocimiento-icon">
         <img src="img/reconocimientos/2013.png" alt="Certificación Internacional" style="width:200px; height:auto; border-radius:5px; border:1px solid #ccc;">
@@ -424,8 +386,6 @@ Unidad Nacional Canina
         Otorgada por la Embajada de los Estados Unidos de América. (2013)
       </p>
     </div>
-
-
     <div class="reconocimiento-card">
       <div class="reconocimiento-icon">
         <img src="img/reconocimientos/2017.jpg" alt="Medalla al Mérito Policial" style="width:200px; height:auto; border-radius:5px; border:1px solid #ccc;">
@@ -435,8 +395,6 @@ Unidad Nacional Canina
         Otorgada por el U. S. Department of Homeland Security Homeland Security Investigations. (2017)
       </p>
     </div>
-
-
     <div class="reconocimiento-card">
       <div class="reconocimiento-icon">
         <img src="img/reconocimientos/2018.jpg" alt="Premio Excelencia Operativa" style="width: 200px; height:auto; border-radius:5px; border:1px solid #ccc;">
@@ -445,21 +403,16 @@ Unidad Nacional Canina
       <p>
         Reconocimiento al cumplir 30 años de la fundación del Centro Regional de Adiestramiento Canino.
       </p>
-
-  
     </div>
-
     <div class="reconocimiento-card">
       <div class="reconocimiento-icon">
         <img src="img/reconocimientos/2019.jpg" alt="Distinción Presidencial" style="width: 200px; height:auto; border-radius:5px; border:1px solid #ccc;">
       </div>
       <h3>DEA QUITO COUNTRY OFFICE</h3>
       <p>
-        Reconocimiento al conmemorar el Trigésimo Primer Aniversario de su creación. (2019)
-        
+        Reconocimiento al conmemorar el Trigésimo Primer Aniversario de su creación. (2019) 
       </p>
     </div>
-
     <div class="reconocimiento-card">
       <div class="reconocimiento-icon">
         <img src="img/reconocimientos/2021.jpg" alt="Cooperación Internacional" style="width:200px; height:auto; border-radius:5px; border:1px solid #ccc;">
@@ -470,7 +423,6 @@ Unidad Nacional Canina
         ilícitas en Sudamérica (2021)
       </p>
     </div>
-
     <div class="reconocimiento-card">
       <div class="reconocimiento-icon">
         <img src="img/reconocimientos/2024.jpg" alt="Unidad del Año" style="width: 200px; height:auto; border-radius:5px; border:1px solid #ccc;">
@@ -483,14 +435,10 @@ Unidad Nacional Canina
 
   </div>
 </section>
-
-
 <!-- Revistas Digitales -->
-
 <section id="revistas" class="section fade-in">
   <h2 class="section-title">Revistas Institucionales</h2>
-  <div class="revistas-carousel">
-    
+  <div class="revistas-carousel">   
     <!-- Revista 1 -->
     <div class="revista-card">
       <div class="revista-cover">
@@ -506,7 +454,6 @@ Unidad Nacional Canina
         </div>
       </div>
     </div>
-
     <!-- Revista 2 -->
     <div class="revista-card">
       <div class="revista-cover">
@@ -522,7 +469,6 @@ Unidad Nacional Canina
         </div>
       </div>
     </div>
-
     <!-- Revista 3 -->
     <div class="revista-card">
       <div class="revista-cover">
@@ -538,7 +484,6 @@ Unidad Nacional Canina
         </div>
       </div>
     </div>
-
     <!-- Revista 4 -->
     <div class="revista-card">
       <div class="revista-cover">
@@ -554,8 +499,6 @@ Unidad Nacional Canina
         </div>
       </div>
     </div>
-
-
     <!-- Revista 5 -->
     <div class="revista-card">
       <div class="revista-cover">
@@ -571,7 +514,6 @@ Unidad Nacional Canina
         </div>
       </div>
     </div>
-
         <!-- Revista 5 -->
     <div class="revista-card">
       <div class="revista-cover">
@@ -587,16 +529,12 @@ Unidad Nacional Canina
         </div>
       </div>
     </div>
-
   </div>
 </section>
 </main>
-
 <!-- BOTÓN PARA REGRESAR AL INICIO-->
 <button class="scroll-to-top" id="scrollToTop" title="Volver al inicio">
 </button>
-
-
 <!-- Footer -->
 <footer id="contactos" class="footer">
   <div class="footer-content">
@@ -635,8 +573,7 @@ Unidad Nacional Canina
           <p>.</p>
           <p style="font-size: 0.9rem; opacity: 0">
             Ponciano Bajo, Quito - Ecuador
-          </p>
-          
+          </p>      
           <div style="margin-top: 1rem;">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.9058228144572!2d-78.48960829935486!3d-0.10480390605214697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5859b7a8d3ca7%3A0x3bc041e0cc3e6148!2sCentro%20de%20Adiestramiento%20Canino%2C%20Quito%20170144!5e0!3m2!1ses!2sec!4v1757541510942!5m2!1ses!2sec"
@@ -647,8 +584,7 @@ Unidad Nacional Canina
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-          </div>
-          
+          </div>   
           <button
             onclick="window.open('https://maps.app.goo.gl/JjLpY24vK7gmHpXH6')"
             style="
@@ -722,7 +658,6 @@ Unidad Nacional Canina
   <i class="fab fa-whatsapp"></i>
   <div class="whatsapp-tooltip">¡Contáctanos por WhatsApp!</div>
 </div>
-
 <!-- WhatsApp Botón flotante funciones de JavaScript -->
 <script>
 // Smooth scrolling for navigation
@@ -731,7 +666,6 @@ function scrollToSection(sectionId) {
     behavior: 'smooth',
   });
 }
-
 // Navigation active state
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.nav a');
@@ -746,7 +680,6 @@ document.addEventListener('DOMContentLoaded', function () {
         current = section.getAttribute('id');
       }
     });
-
     navLinks.forEach((link) => {
       link.classList.remove('active');
       if (link.getAttribute('href').substring(1) === current) {
@@ -820,8 +753,8 @@ document.addEventListener('DOMContentLoaded', function () {
             visibility: hidden;
             transition: all 0.3s ease;
         }
-        
-        .nav.active {
+     
+  .nav.active {
             transform: translateY(0);
             opacity: 1;
             visibility: visible;
@@ -862,7 +795,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetText = number.textContent;
             const target = parseFloat(targetText.replace(/[,%]/g, ''));
             number.textContent = '0';
-
             setTimeout(() => {
               animateCounter(number, target);
               if (targetText.includes('%')) {
@@ -871,7 +803,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }, 2100);
               }
             }, 300);
-
             entry.target.classList.add('animated');
           }
         }
@@ -879,7 +810,6 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     { threshold: 0.5 }
   );
-
   document.querySelectorAll('.stat-card').forEach((card) => {
     statObserver.observe(card);
   });
@@ -897,7 +827,7 @@ function openWhatsApp() {
     const message = encodeURIComponent(
       'Hola, me gustaría obtener información sobre la Unidad Nacional Canina.'
     );
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+    window.open(`https://wa.me/${phoneNumber}?text=${message}, '_blank');
   }, 2000);
 }
 
@@ -912,7 +842,6 @@ document.addEventListener('DOMContentLoaded', function () {
       this.style.transform = 'translateY(-10px) scale(1.02)';
       this.style.boxShadow = '0 15px 40px rgba(0,0,0,0.2)';
     });
-
     card.addEventListener('mouseleave', function () {
       this.style.transform = 'translateY(0) scale(1)';
       this.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
